@@ -1,0 +1,83 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff; 
+}
+
+input{
+    outline: none;
+    background: none;
+    border: none;
+    color: #fff; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.card {
+    width: 1010px;
+    height: 638px;
+    border-radius: 38px;
+    padding: 80px;
+    box-sizing: border-box;
+    background-image: url('./images/bg-3.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+}
+.card__numbers {
+    margin-top: auto;
+    margin-bottom: 44px;
+}
+
+.card__numbers input{
+    --size: 50px;
+    width: calc(var(--size) / 1.8);
+    font-size: var(--size);
+    text-align: center;
+}
+
+.card__numbers input:nth-child(4n):not(last-child){
+    margin-right: 48px;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+.card__footer input{
+    font-size: 40px;
+    text-align: left;
+}
+
+.card__footer-holder{
+    flex-grow: 1;
+}
+
+.card__date {
+    display: flex;
+}
+
+.card__date input {
+    width: 50px;
+    text-align: center;
+}
